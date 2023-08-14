@@ -1,0 +1,53 @@
+---Created a Soccer Cleats store database
+
+
+CREATE TABLE soccer_cleats (id INTEGER PRIMARY KEY, color TEXT, size INTEGER, brand TEXT, price INTEGER); 
+
+INSERT INTO soccer_cleats VALUES (1, "GREEN", 10, "AIRFLY", 200.00);
+
+INSERT INTO soccer_cleats VALUES (2, "GREEN", 11, "AIRFLY", 200.00);
+
+INSERT INTO soccer_cleats VALUES (3, "GREEN", 12, "AIRFLY", 200.00);
+
+INSERT INTO soccer_cleats VALUES (4, "BLUE", 10, "AIRFLY", 210.00);
+
+INSERT INTO soccer_cleats VALUES (5, "BLUE", 11, "AIRFLY", 210.00);
+
+INSERT INTO soccer_cleats VALUES (6, "BLUE", 12, "AIRFLY", 210.00);
+
+INSERT INTO soccer_cleats VALUES (7, "YELLOW", 10, "AIRFLY", 220.00);
+
+INSERT INTO soccer_cleats VALUES (8, "YELLOW", 11, "AIRFLY", 220.00);
+
+INSERT INTO soccer_cleats VALUES (9, "YELLOW", 12, "AIRFLY", 220.00);
+
+INSERT INTO soccer_cleats VALUES (10, "PURPLE", 10, "AIRFLY", 230.00);
+
+INSERT INTO soccer_cleats VALUES (11, "PURPLE", 11, "AIRFLY", 230.00);
+
+INSERT INTO soccer_cleats VALUES (12, "PURPLE", 12, "AIRFLY", 230.00);
+
+INSERT INTO soccer_cleats VALUES (13, "ORANGE", 10, "AIRFLY", 240.00);
+
+INSERT INTO soccer_cleats VALUES (14, "ORANGE", 11, "AIRFLY", 240.00); 
+
+INSERT INTO soccer_cleats VALUES (15, "ORANGE", 12, "AIRFLY", 240.00);
+
+
+--- Display the database. 
+SELECT * FROM soccer_cleats;
+
+---Display the database by cleats size.
+SELECT * FROM soccer_cleats ORDER BY size;
+
+---Display the database by cleats price from greatest to least.
+SELECT * FROM soccer_cleats ORDER BY price DESC;
+
+---Display the database sum price of all cleats.
+SELECT sum(price) FROM soccer_cleats;
+
+---Display the database cheapest cleat
+SELECT min(price) FROM soccer_cleats;
+
+---Display the database most expensive cleat 
+SELECT MAX(price) FROM soccer_cleats;
